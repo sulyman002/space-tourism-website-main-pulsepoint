@@ -1,14 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>space-tourism-website-main ~ pulsepoint</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" href="/starter-code/assets/favicon-32x32.png" type="image/x-icon">
+    <!-- Google font style (bellefair) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bellefair&display=swap" rel="stylesheet">
+    <!-- barlow Google font style -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
 </head>
-<body>
-    
+
+<body style="font-family: 'Bellefair', serif;"
+    class="w-full h-screen font-Bellefair text-white bg-[url('./starter-code/assets/home/background-home-mobile.jpg')] md:bg-[url('/starter-code/assets/home/background-home-tablet.jpg')] lg:bg-[url('/starter-code/assets/home/background-home-desktop.jpg')] bg-cover bg-no-repeat bg-center">
+    <div class="relative flex justify-between items-center px-6 pt-6 lg:px-20 lg:pt-10">
+        <div>
+            <img src="/starter-code/assets/shared/logo.svg" alt="">
+        </div>
+
+
+        <!-- <div class="navContent fixed top-0 right-0 h-full w-2/3 bg-black/70 backdrop-blur-md text-white hidden flex-col items-start p-8 gap-6 transition-all duration-500 z-40"> -->
+        <ul style="font-family: 'Barlow Condensed', sans-serif;"
+            class="navContent text-[19px] fixed md:static md:w-[640px] md:bg-white/10 md: md:flex md:justify-end top-0 right-0 h-full w-2/3 bg-[0B0D17] backdrop-blur-lg md:backdrop-blur-2xl flex flex-col md:flex-row items-start p-8 md:p-0 md:h-16 md:px-12 gap-6 md:gap-8 transition-all duration-1000 z-40 hidden">
+            <div class="closeNav w-full flex justify-end cursor-pointer md:hidden"><img class="flex justify-end"
+                    src="/starter-code/assets/shared/icon-close.svg" alt=""></div>
+            <li class="md:h-full  md:flex md:items-center md:active:border-b-2 md:border-white"><a
+                    class="md:flex md:gap-4" href=""><b class="md:hidden">00</b> HOME</a></li>
+            <li class="md:h-full  md:flex md:items-center md:active:border-b-2 md:border-white"><a
+                    class="md:flex md:gap-3" href=""><b>01</b> DESTINATION</a></li>
+            <li class="md:h-full  md:flex md:items-center md:active:border-b-2 md:border-white"><a
+                    class="md:flex md:gap-3" href=""><b>02</b> CREW</a></li>
+            <li class="md:h-full  md:flex md:items-center md:active:border-b-2 md:border-white"><a
+                    class="md:flex md:gap-3" href=""><b>03</b> TECHNOLOGY</a></li>
+        </ul>
+        <div class="icon_hamburger cursor-pointer md:hidden"><img src="/starter-code/assets/shared/icon-hamburger.svg"
+                alt="">
+        </div>
+    </div>
+
+    <div class="md:flex md:items-center md:flex-col md:mt-12">
+        <div class="flex flex-col items-center justify-center text-blue-200 md:w-[688px]">
+            <p class="pt-12 tracking-wider text-[17px] md:text-2xl" style="font-family: 'Barlow Condensed', sans-serif;">SO, YOU
+                WANT TO TRAVEL TO</p>
+            <h1 class="text-7xl  py-8 text-white lg:text-red-400">SPACE</h1>
+            <P class="flex items-center justify-center text-center px-7 text-[18px] leading-relaxed md:w-[512px]">Let’s face it; if
+                you want to go to space, you
+                might as well genuinely go to outer space and not hover kind
+                of on the edge of it. Well sit back, and relax because we’ll give you a truly out of this world
+                experience!
+            </P>
+        </div>
+
+        <div class="flex items-center justify-center h-[382px] md:w-[688px]">
+            <div
+                class="flex items-center justify-center w-[144px] h-[144px] bg-white rounded-full text-black text-2xl  cursor-pointer hover:bg-gray-200 transition duration-300">
+                <a href="/starter-code/destination.html">EXPLORE</a>
+
+            </div>
+
+        </div>
+    </div>
+
+
+
 
     <script src="script.js"></script>
 </body>
+
 </html>
