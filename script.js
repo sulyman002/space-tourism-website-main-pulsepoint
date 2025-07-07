@@ -8,7 +8,8 @@ icon_hamburger.addEventListener('click', () => {
 });
 
 closeNav.addEventListener('click', () => {
-    navContent.style.display = 'none' 
+    navContent.style.display = 'none'
+    location.reload(); 
 
 });
 
