@@ -80,6 +80,62 @@ fetch('starter-code/data.json')
             });
         });
 
+        const douglas = document.querySelector('.douglas');
+        const mark = document.querySelector('.mark');
+        const victor = document.querySelector('.victor');
+        const anousheh = document.querySelector('.');
+
+        const crew = data.crew
+        console.log(crew)
+        douglas.addEventListener('click', () => {
+            crew.forEach((crew, index) => {
+                if(index === 0){anousheh
+                    document.querySelector('.crewRole').innerHTML = crew.role;
+                    document.querySelector('.crewName').innerHTML = crew.name;
+                    document.querySelector('.crewContent').innerHTML = crew.bio;
+                    document.querySelector('.crewImg').scr = crew.images.png;
+
+                }
+            });
+        });
+
+
+        mark.addEventListener('click', () => {
+            crew.forEach((crew, index) => {
+                if(index === 1){
+                    document.querySelector('.crewRole').innerHTML = crew.role;
+                    document.querySelector('.crewName').innerHTML = crew.name;
+                    document.querySelector('.crewContent').innerHTML = crew.bio;
+                    document.querySelector('.crewImg').scr = crew.images.png;
+
+                }
+            });
+        });
+
+        victor.addEventListener('click', () => {
+            crew.forEach((crew, index) => {
+                if(index === 2){
+                    document.querySelector('.crewRole').innerHTML = crew.role;
+                    document.querySelector('.crewName').innerHTML = crew.name;
+                    document.querySelector('.crewContent').innerHTML = crew.bio;
+                    document.querySelector('.crewImg').scr = crew.images.png;
+
+                }
+            });
+        })
+
+        anousheh.addEventListener('click', () => {
+            crew.forEach((crew, index) => {
+                if(index === 2){
+                    document.querySelector('.crewRole').innerHTML = crew.role;
+                    document.querySelector('.crewName').innerHTML = crew.name;
+                    document.querySelector('.crewContent').innerHTML = crew.bio;
+                    document.querySelector('.crewImg').scr = crew.images.png;
+
+                }
+            });
+        })
+
 
 
     });
