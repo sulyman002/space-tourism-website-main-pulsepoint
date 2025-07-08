@@ -18,6 +18,8 @@ fetch('starter-code/data.json')
     .then(data => {
 
         const destination = data.destinations;
+        const crews = data.crew;
+        console.log(destination)
         
         const moon = document.querySelector('.moon');
         const mars = document.querySelector('.mars');
@@ -31,7 +33,7 @@ fetch('starter-code/data.json')
                     document.querySelector('.destinationDetails').innerHTML = destination.description;
                     document.querySelector('.destinationAvg').innerHTML = destination.distance;
                     document.querySelector('.destinationTravelTime').innerHTML = destination.travel;
-                    document.querySelector('.moonImg').scr = destination.images.png
+                    document.querySelector('.moonImg').src = destination.images.png
 
                 }
                 
@@ -45,7 +47,7 @@ fetch('starter-code/data.json')
                     document.querySelector('.destinationDetails').innerHTML = destination.description;
                     document.querySelector('.destinationAvg').innerHTML = destination.distance;
                     document.querySelector('.destinationTravelTime').innerHTML = destination.travel;
-                    document.querySelector('.moonImg').scr = destination.images.png
+                    document.querySelector('.moonImg').src = destination.images.png
 
                 }
                 
@@ -59,7 +61,7 @@ fetch('starter-code/data.json')
                     document.querySelector('.destinationDetails').innerHTML = destination.description;
                     document.querySelector('.destinationAvg').innerHTML = destination.distance;
                     document.querySelector('.destinationTravelTime').innerHTML = destination.travel;
-                    document.querySelector('.moonImg').scr = destination.images.png
+                    document.querySelector('.moonImg').src = destination.images.png
 
                 }
                 
@@ -73,7 +75,7 @@ fetch('starter-code/data.json')
                     document.querySelector('.destinationDetails').innerHTML = destination.description;
                     document.querySelector('.destinationAvg').innerHTML = destination.distance;
                     document.querySelector('.destinationTravelTime').innerHTML = destination.travel;
-                    document.querySelector('.moonImg').scr = destination.images.png
+                    document.querySelector('.moonImg').src = destination.images.png
 
                 }
                 
@@ -83,17 +85,16 @@ fetch('starter-code/data.json')
         const douglas = document.querySelector('.douglas');
         const mark = document.querySelector('.mark');
         const victor = document.querySelector('.victor');
-        const anousheh = document.querySelector('.');
+        const anousheh = document.querySelector('.anousheh');
 
-        const crew = data.crew
-        console.log(crew)
+    
         douglas.addEventListener('click', () => {
-            crew.forEach((crew, index) => {
-                if(index === 0){anousheh
-                    document.querySelector('.crewRole').innerHTML = crew.role;
-                    document.querySelector('.crewName').innerHTML = crew.name;
+            crews.forEach((crew, index) => {
+                if(index === 0){
+                    document.querySelector('.crewRole').innerHTML = crew.role.toUpperCase();
+                    document.querySelector('.crewName').innerHTML = crew.name.toUpperCase();
                     document.querySelector('.crewContent').innerHTML = crew.bio;
-                    document.querySelector('.crewImg').scr = crew.images.png;
+                    document.querySelector('.crewImg').src = crew.images.png;
 
                 }
             });
@@ -101,36 +102,36 @@ fetch('starter-code/data.json')
 
 
         mark.addEventListener('click', () => {
-            crew.forEach((crew, index) => {
+            crews.forEach((crew, index) => {
                 if(index === 1){
-                    document.querySelector('.crewRole').innerHTML = crew.role;
-                    document.querySelector('.crewName').innerHTML = crew.name;
+                    document.querySelector('.crewRole').innerHTML = crew.role.toUpperCase();
+                    document.querySelector('.crewName').innerHTML = crew.name.toUpperCase();
                     document.querySelector('.crewContent').innerHTML = crew.bio;
-                    document.querySelector('.crewImg').scr = crew.images.png;
+                    document.querySelector('.crewImg').src = crew.images.png;
 
                 }
             });
         });
 
         victor.addEventListener('click', () => {
-            crew.forEach((crew, index) => {
+            crews.forEach((crew, index) => {
                 if(index === 2){
-                    document.querySelector('.crewRole').innerHTML = crew.role;
-                    document.querySelector('.crewName').innerHTML = crew.name;
+                    document.querySelector('.crewRole').innerHTML = crew.role.toUpperCase();
+                    document.querySelector('.crewName').innerHTML = crew.name.toUpperCase();
                     document.querySelector('.crewContent').innerHTML = crew.bio;
-                    document.querySelector('.crewImg').scr = crew.images.png;
+                    document.querySelector('.crewImg').src = crew.images.png;
 
                 }
             });
         })
 
         anousheh.addEventListener('click', () => {
-            crew.forEach((crew, index) => {
-                if(index === 2){
-                    document.querySelector('.crewRole').innerHTML = crew.role;
-                    document.querySelector('.crewName').innerHTML = crew.name;
+            crews.forEach((crew, index) => {
+                if(index === 3){
+                    document.querySelector('.crewRole').innerHTML = crew.role.toUpperCase();
+                    document.querySelector('.crewName').innerHTML = crew.name.toUpperCase();
                     document.querySelector('.crewContent').innerHTML = crew.bio;
-                    document.querySelector('.crewImg').scr = crew.images.png;
+                    document.querySelector('.crewImg').src = crew.images.png;
 
                 }
             });
