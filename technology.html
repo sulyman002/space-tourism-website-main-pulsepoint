@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/starter-code/assets/favicon-32x32.png" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google font style (bellefair) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bellefair&display=swap" rel="stylesheet">
+    <!-- barlow Google font style -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body style="font-family: 'Bellefair', serif;"
+    class="w-full h-screen font-Bellefair text-white bg-[url('/starter-code/assets/technology/background-technology-mobile.jpg')] md:bg-[url('/starter-code/assets/technology/background-technology-tablet.jpg')] xl:bg-[url('/starter-code/assets/technology/background-technology-desktop.jpg')] bg-cover bg-no-repeat bg-center">
+    <div class="relative flex justify-between items-center px-6 pt-6 xl:px-20 xl:pt-10">
+        <a href="/index.html">
+            <img src="/starter-code/assets/shared/logo.svg" alt="">
+        </a>
+
+
+
+        <ul style="font-family: 'Barlow Condensed', sans-serif;"
+            class="navContent text-[19px] fixed md:static md:w-[640px] md:bg-white/10 md: md:flex md:justify-end top-0 right-0 h-full w-2/3 bg-[0B0D17] backdrop-blur-xl md:backdrop-blur-2xl flex flex-col md:flex-row items-start p-8 md:p-0 md:h-16 md:px-12 gap-6 md:gap-8 transition-all duration-1000 z-40 hidden">
+            <div class="closeNav w-full flex justify-end cursor-pointer md:hidden"><img class="flex justify-end"
+                    src="/starter-code/assets/shared/icon-close.svg" alt=""></div>
+            <li class="md:h-full  md:flex md:items-center md:active:border-b-2 md:border-white"><a
+                    class="md:flex md:gap-4" href="/index.html"><b class="md:hidden">00</b> HOME</a></li>
+            <li class="md:h-full  md:flex md:items-center md:active:border-b-2 md:border-white"><a
+                    class="md:flex md:gap-3" href="destination.html"><b>01</b> DESTINATION</a></li>
+            <li class="md:h-full  md:flex md:items-center md:active:border-b-2 md:border-white"><a
+                    class="md:flex md:gap-3" href="/crew.html"><b>02</b> CREW</a></li>
+            <li class="md:h-full  md:flex md:items-center md:active:border-b-2 md:border-white"><a
+                    class="md:flex md:gap-3" href=""><b>03</b> TECHNOLOGY</a></li>
+        </ul>
+        <div class="icon_hamburger cursor-pointer md:hidden"><img src="/starter-code/assets/shared/icon-hamburger.svg"
+                alt="">
+        </div>
+    </div>
+
+    <div class="flex flex-col items-center justify-center text-blue-200 my-8 gap-4">
+        <div class="md:flex md:justify-start md:w-full xl:px-28 mt-[24px] px-6">
+            <p style="font-family: 'Barlow Condensed', sans-serif;" class="flex  gap-4 text-[18px] tracking-widest">
+                <b class="text-white/40">03</b>SPACE LAUNCH 101
+            </p>
+        </div>
+
+        <div class="mt-[64px]">
+            <picture>
+                <!-- For screens smaller than 800px -->
+                <source media="(max-width: 1280px)"
+                    srcset="/starter-code/assets/technology/image-launch-vehicle-landscape.jpg">
+                <!-- xl -->
+
+                <!-- Fallback image -->
+                <img src="/starter-code/assets/tech11nology/image-launch-vehicle-portrait.jpg" class="h-[258px] w-full md:w-full bg-red-400"
+                    alt="Responsive image">
+            </picture>
+        </div>
+
+        <div class="px-6 flex flex-col items-center justify-center text-blue-200 my-8 gap-4">
+
+            <div class="flex justify-center items-center gap-4">
+                <div
+                    class="h-[40px] w-[40px] md:h-[56px] md:w-[56px] cursor-pointer rounded-full active:bg-white active:text-blue-900 hover:text-blue-900 border-[1px] font-bold border-white/40 text-white hover:bg-white flex items-center justify-center">
+                    1</div>
+                <div
+                    class="h-[40px] w-[40px] md:h-[56px] md:w-[56px] cursor-pointer rounded-full active:bg-white active:text-blue-900 hover:text-blue-900 border-[1px] font-bold border-white/40 text-white hover:bg-white flex items-center justify-center">
+                    2</div>
+                <div
+                    class="h-[40px] w-[40px] md:h-[56px] md:w-[56px] cursor-pointer rounded-full active:bg-white active:text-blue-900 hover:text-blue-900 border-[1px] font-bold border-white/40 text-white hover:bg-white flex items-center justify-center">
+                    3</div>
+            </div>
+
+            <div class="flex flex-col items-center gap-2 mt-[40px] xl:gap-4 justify-center  xl:items-start">
+                <p class="text-white/60 crewRole xl:text-3xl">THE TERMINOLOGY</p>
+                <h1 class="text-2xl md:text-3xl md:text-red-400 text-white/90 crewName  xl:text-6xl">LAUNCH VEHICLE</h1>
+            </div>
+
+            <div
+                class="flex px-6 md:w-[512px] wrap-balance tracking-wider leading-relaxed flex-col items-center justify-center text-center  xl:mt-1 xl:w-[580px] xl:text-start xl:text-[18px]">
+                <P class="crewContent" style="font-family: 'Barlow Condensed', sans-serif;">A launch vehicle or carrier
+                    rocket is a rocket-propelled vehicle used to carry a
+                    payload from Earth's surface to space, usually to Earth orbit or beyond. Our WEB-X carrier rocket is
+                    the most powerful in operation. Standing 150 metres tall, it's quite an awe-inspiring sight on the
+                    launch pad!</P>
+            </div>
+        </div>
+
+
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

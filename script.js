@@ -19,7 +19,6 @@ fetch('starter-code/data.json')
 
         const destination = data.destinations;
         const crews = data.crew;
-        console.log(destination)
         
         const moon = document.querySelector('.moon');
         const mars = document.querySelector('.mars');
@@ -135,8 +134,6 @@ fetch('starter-code/data.json')
 
                 }
             });
-        })
-
-
+        });
 
     });
